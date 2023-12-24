@@ -1,0 +1,36 @@
+{
+  "name": "app",
+  "private": "true",
+  "scripts": {
+    "build": "esbuild app/javascript/*/*.* --bundle --sourcemap --outdir=app/assets/builds --public-path=/assets",
+    "check-types": "tsc --project tsconfig.json --noEmit --watch --preserveWatchOutput"
+  },
+  "description": "This README would normally document whatever steps are necessary to get the application up and running.",
+  "version": "1.0.0",
+  "main": "index.js",
+  "directories": {
+    "lib": "lib",
+    "test": "test"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/react": "^18.2.45",
+    "@types/react-dom": "^18.2.18",
+    "esbuild": "^0.19.10",
+    "esbuild-plugin-import-map": "^2.1.0",
+    "typescript": "^5.3.3"
+  },
+  "dependencies": {
+    "@emotion/react": "^11.11.1",
+    "@emotion/styled": "^11.11.0",
+    "@hotwired/stimulus": "^3.2.2",
+    "@hotwired/turbo-rails": "^8.0.0-beta.2",
+    "@mui/material": "^5.15.1",
+    "@mui/x-date-pickers": "^6.18.6",
+    "dayjs": "^1.11.10",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
+  }
+}
